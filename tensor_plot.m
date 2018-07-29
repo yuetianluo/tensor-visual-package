@@ -1,4 +1,8 @@
 function tensor_plot(varargin)
+%%%%%%%%%%%%%%%%%%%%
+% Authors: Yuetian Luo (yluo86@wisc.edu), Anru Zhang (anruzhang@stat.wisc.edu)
+% University of Wisconsin-Madison
+%%%%%%%%%%%%%%%%%%%%
 % EDGES: 3-element (a,b,c) vector that defines the edges of your plot
 % space.
 % ORIGIN: 3-element vector that defines the origin of the tensor

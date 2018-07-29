@@ -1,4 +1,8 @@
 function matrix_plot(matrix, d2, d3, color_map)
+%%%%%%%%%%%%%%%%%%%%
+% Authors: Yuetian Luo (yluo86@wisc.edu), Anru Zhang (anruzhang@stat.wisc.edu)
+% University of Wisconsin-Madison
+%%%%%%%%%%%%%%%%%%%%
 % Plot a matrix in 3-d dimension
 % MATRIX: defines the matrix input, and the scalar value in the matrix
 % represent the color depth in the "jet" colormap
