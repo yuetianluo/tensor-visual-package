@@ -1,4 +1,8 @@
 function plotcube(varargin)
+%%%%%%%%%%%%%%%%%%%%%
+% Thanks to Olivier: https://www.mathworks.com/matlabcentral/fileexchange/15161-plotcube
+%%%%%%%%%%%%%%%%%%%%%
+
 % PLOTCUBE - Display a 3D-cube in the current axes
 %
 %   PLOTCUBE(EDGES,ORIGIN,ALPHA,COLOR) displays a 3D-cube in the current axes
