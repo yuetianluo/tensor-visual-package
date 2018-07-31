@@ -1,6 +1,6 @@
-# tensor-visual-package
+#  tevis (a *te*nsor-*vis*ual-package)
 
-This is a tensor visualization package which is useful to draw some simple tensor plots. Here are some plots: https://github.com/yuetianluo/tensor-visual-package/wiki
+Tevis is a tensor visualization package which is useful to draw some simple tensor plots. And the name of "Tevis" is also inspired by a famous game "Tetris". And we are now playing 3-d version "Tetris". Here are some plots: https://github.com/yuetianluo/tensor-visual-package/wiki
 
 For the tutorial, you can take a look at the tensor_visual_tutorial.pdf file in the tutorial folder. 
 
