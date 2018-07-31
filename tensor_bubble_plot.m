@@ -24,23 +24,23 @@ function tensor_bubble_plot(tensor, markeralpha, linealpha)
     hold on;
     for i = 1:a
         for j = 1:b
-                plot_1 = plot3(repmat(i,[z, 1])', repmat(j, [z,1])', 1:z,'k' ,'LineWidth', 2);
+                plot_1 = plot3(repmat(i,[z, 1])', repmat(j, [z,1])', 1:z,'k--' ,'LineWidth', 2);
                 plot_1.Color(4) = linealpha;        
         end
     end
     for j = 1:b
         for k = 1:z
-                plot_2 = plot3(1:a,repmat(j,[a, 1])',  repmat(k, [a,1])', 'k', 'LineWidth', 2);
+                plot_2 = plot3(1:a,repmat(j,[a, 1])',  repmat(k, [a,1])', 'k--', 'LineWidth', 2);
                 plot_2.Color(4) = linealpha;
         end
     end
     for i = 1:a
         for k = 1:z
-                plot_3 = plot3(repmat(i,[b, 1])', 1:b, repmat(k, [b,1])', 'k', 'LineWidth', 2);
+                plot_3 = plot3(repmat(i,[b, 1])', 1:b, repmat(k, [b,1])', 'k--', 'LineWidth', 2);
                 plot_3.Color(4) = linealpha;
         end
     end
-   % axis off;
+   axis off;
     xlim([0 a+0.5]);
     ylim([0 b+0.5]);
     zlim([0 z+0.5]);    
