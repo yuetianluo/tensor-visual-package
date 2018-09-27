@@ -42,7 +42,7 @@ if block == 0
         for j=0:(m2-1)
             for k=0:(m3-1)  
                 colormap(color_map);       
-                plotcube([1 1 1], [i, j, k], 0.8, clr(i*m1+ j*m2+ k+1));
+                plotcube([1 1 1], [i, j, k], 0.8,clr(i+1 + j*m1+ k*m1*m2));
             end
         end
     end
@@ -78,7 +78,7 @@ else
                     if sum(i == break_point1) > 0 | sum(j == break_point2) > 0 | sum(k == break_point3) > 0
                         continue
                     else 
-                        plotcube([1 1 1], [i, j, k], 0.8, clr(i*m1+ j*m2+ k+1));
+                        plotcube([1 1 1], [i, j, k], 0.8, clr(i+1 + j*m1+ k*m1*m2));
                     end
             end
         end

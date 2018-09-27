@@ -37,6 +37,6 @@ function matrix_plot(matrix, d2, d3, color_map)
     elseif (d2 == 1 & d3 ==0)
         figure(1);
         pcolor(matrix);
-        colormap(jet_map);
+        colormap(color_map);
     end
 end
