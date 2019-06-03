@@ -1,6 +1,5 @@
-%% TENSOR PLOT examples
-% In this document, we show a few examples to demonstrate how to use these
-% tensor plot functions.
+%% Tensor Plot Examples
+% In this document, we show a few examples to demonstrate how to use these tensor plot functions.
 %% Plot Tensor
 
 % (figure 1) Given a tensor, and visualize the tensor in 3-d dimension and the value of
@@ -53,13 +52,10 @@ title('Figure 5','FontSize', 24)
 % (figure 6) Plot a matrix in 3-D along with the original matrix in 2-D
 mymatrix = rand(3,2);
 mycolor_map = 'gray';
-d3 = 1;
-d2 = 1;
-matrix_plot(mymatrix, d2, d3, mycolor_map);
+matrix_plot(mymatrix, mycolor_map);
 title('Figure 6','FontSize', 24)
 
 % (figure 7) Plot a matrix in 3-D alone.
-d2 = 0;
-matrix_plot(mymatrix, d2, d3, mycolor_map);
+matrix_plot(mymatrix, mycolor_map);
 title('Figure 7','FontSize', 24)
 

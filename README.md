@@ -8,3 +8,5 @@ This package is still under developing, any comments are welcomed! (email: yluo8
 
 *Authors: Yuetian Luo (yluo86@wisc.edu), Anru Zhang (anruzhang@stat.wisc.edu)*
 *University of Wisconsin-Madison*
+
+Last updated: 2019.6

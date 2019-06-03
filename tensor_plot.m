@@ -33,16 +33,21 @@ inArgs = { ...
 inArgs(1:nargin) = varargin;
 
 [edges, origin, alpha, clr, color_map , block, block_size] = deal(inArgs{:});
-[m1 m2 m3] = size(clr);
+m1 = size(clr,1);
+m2 = size(clr,2);
+m3 = size(clr,3);
 clr = clr(:);
+ori1 = origin(1);
+ori2 = origin(2);
+ori3 = origin(3);
 figure;
 if block == 0
     plotcube(edges, [0 0 0], 0, [0 0 0]);
     for i= 0:(m1-1)  %body measurements
-        for j=0:(m2-1)
-            for k=0:(m3-1)  
+        for j= 0:(m2-1)
+            for k= 0:(m3-1)  
                 colormap(color_map);       
-                plotcube([1 1 1], [i, j, k], 0.8,clr(i+1 + j*m1+ k*m1*m2));
+                plotcube([1 1 1], [i+ori1, j+ori2, k+ori3], 0.8,clr(i+1 + j*m1+ k*m1*m2));
             end
         end
     end
@@ -53,7 +58,7 @@ else
     m1 = m1 + length1;
     m2 = m2 + length2;
     m3 = m3 + length3;
-    colormap(color_map); 
+    colormap(color_map);
     for i = 0:(m1-1)
         for j = 0:(m2-1)
             for k = 0:(m3-1)
@@ -78,7 +83,7 @@ else
                     if sum(i == break_point1) > 0 | sum(j == break_point2) > 0 | sum(k == break_point3) > 0
                         continue
                     else 
-                        plotcube([1 1 1], [i, j, k], 0.8, clr(i+1 + j*m1+ k*m1*m2));
+                        plotcube([1 1 1], [i+ori1, j+ori2, k+ori3], 0.8, clr(i+1 + j*m1+ k*m1*m2));
                     end
             end
         end
